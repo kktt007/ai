@@ -1,25 +1,18 @@
-# arch linux install script for minimal kde etc...
+*arch linux install script for minimal kde etc...*
 
 ## usage
+ 修改install.sh中的用户名kktt007
+- `curl -O https://raw.githubusercontent.com/kktt007/ai/main/ai.sh`
 
-```
-curl -O https://raw.githubusercontent.com/kktt007/ai/main/ai.sh
+  - or `curl -O https://kktt007.top/ai/ai.sh`
 
-or
+- `source ai.sh`
 
-curl -O https://kktt007.top/ai/ai.sh
+- `source preinstall.sh`
 
-source ai.sh
-```
+- `reboot`
 
-```
-source preinstall.sh
-```
+- login with your account
+  - `source install.sh`
 
-## reboot
-
-```
-source install.sh
-```
-
-## finshed install arch linux
+**finshed installing arch linux kde...**

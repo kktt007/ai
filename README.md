@@ -1,8 +1,11 @@
 *arch linux install script for minimal kde etc...*
 
 ## usage
- 1. 修改install.sh中的用户名kktt007 with yours
+- 修改install.sh
+ 1. 用户名kktt007 with yours
  2. if you use nvidia just comment `# optimus-manager --set-startup=nvidia`
+ 
+ ---
  
 - `curl -O https://raw.githubusercontent.com/kktt007/ai/main/ai.sh`
 

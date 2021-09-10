@@ -59,7 +59,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable NetworkManager.service
 
-curl -O https://kktt007.top/ai/install.sh
+curl -O https://raw.githubusercontent.com/kktt007/ai/main/install.sh
 
 cp install.sh /home/kktt007/
 

@@ -13,12 +13,6 @@ cp chroot.sh /mnt/home/
 
 chmod +x /mnt/home/chroot.sh
 
-chmod +x /mnt/home/install.sh
-
 genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt ./home/chroot.sh
-
-exit
-exit
-umount -R /mnt

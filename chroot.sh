@@ -46,7 +46,7 @@ useradd -m -G wheel kktt007
 
 passwd kktt007
 
-pacman -S --noconfirm base-devel git wget curl nano networkmanager sddm nm-connection-editor dosfstools ntfs-3g bbswitch alacritty ranger dialog wpa_supplicant netctl wireless_tools dosfstools grub efibootmgr os-prober intel-ucode
+pacman -S --noconfirm base-devel git wget curl nano networkmanager dosfstools ntfs-3g bbswitch alacritty dialog wpa_supplicant netctl wireless_tools grub efibootmgr os-prober intel-ucode
 
 sed -e "s|# %wheel ALL=(ALL) ALL|%wheel ALL=(ALL) ALL|" -i /etc/sudoers
 

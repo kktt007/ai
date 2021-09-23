@@ -59,8 +59,14 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable NetworkManager.service
 
-curl -O https://raw.githubusercontent.com/kktt007/ai/main/install.sh
+curl -O https://raw.githubusercontent.com/kktt007/ai/main/i3.sh
 
-cp install.sh /home/kktt007/
+curl -O https://raw.githubusercontent.com/kktt007/ai/main/kde.sh
 
-chmod +x /home/kktt007/install.sh
+cp i3.sh /home/kktt007/
+
+cp kde.sh /home/kktt007/
+
+chmod +x /home/kktt007/i3.sh
+
+chmod +x /home/kktt007/ikde.sh

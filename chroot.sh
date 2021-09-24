@@ -1,8 +1,6 @@
 # /mnt is the /, /mnt/home/kktt007 /home/kktt007
 timedatectl set-timezone Asia/Shanghai
 hwclock -w
-
-systemctl enable systemd-timesyncd.service
 timedatectl set-ntp true
 
 echo archlinux > /etc/hostname
@@ -40,13 +38,13 @@ pacman -S --noconfirm archlinux-keyring archlinuxcn-keyring
 
 pacman -Sy
 
+pacman -S --noconfirm base-devel git wget curl nano networkmanager dosfstools ntfs-3g bbswitch alacritty dialog wpa_supplicant netctl wireless_tools grub efibootmgr os-prober intel-ucode
+
 passwd
 
 useradd -m -G wheel kktt007
 
 passwd kktt007
-
-pacman -S --noconfirm base-devel git wget curl nano networkmanager dosfstools ntfs-3g bbswitch alacritty dialog wpa_supplicant netctl wireless_tools grub efibootmgr os-prober intel-ucode
 
 sed -e "s|# %wheel ALL=(ALL) ALL|%wheel ALL=(ALL) ALL|" -i /etc/sudoers
 

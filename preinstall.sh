@@ -1,7 +1,4 @@
-# echo 'Server = https://mirrors.cnnic.cn/archlinux/$repo/os/$arch' > /etc/pacman.d/mirrorlist
-# echo 'Server = http://mirrors.163.com/archlinux/$repo/os/$arch' >> /etc/pacman.d/mirrorlist
-# echo 'Server = http://mirrors.aliyun.com/archlinux/$repo/os/$arch' >> /etc/pacman.d/mirrorlist
-pacstrap /mnt reflector
+pacstrap /mnt reflector nano
 reflector --country China --age 12 --protocol https --ipv4 -x dgut.edu.cn -x sjtu.edu.cn --download-timeout 30 --sort rate --fastest 3 --save /etc/pacman.d/mirrorlist
 
 sed -i "11iServer = https://mirrors.cnnic.cn/archlinux/\$repo/os/\$arch" /etc/pacman.d/mirrorlist

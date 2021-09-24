@@ -38,7 +38,7 @@ pacman -S --noconfirm archlinux-keyring archlinuxcn-keyring
 
 pacman -Sy
 
-pacman -S --noconfirm base-devel git wget curl nano networkmanager dosfstools ntfs-3g bbswitch alacritty dialog wpa_supplicant netctl wireless_tools grub efibootmgr os-prober intel-ucode
+pacman -S --noconfirm base-devel git wget nano networkmanager bbswitch alacritty dialog wpa_supplicant netctl wireless_tools dosfstools ntfs-3g grub efibootmgr os-prober intel-ucode
 
 passwd
 
@@ -67,4 +67,4 @@ cp kde.sh /home/kktt007/
 
 chmod +x /home/kktt007/i3.sh
 
-chmod +x /home/kktt007/ikde.sh
+chmod +x /home/kktt007/kde.sh

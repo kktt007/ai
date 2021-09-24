@@ -13,8 +13,8 @@ cd ~
 curl -O curl -O https://kktt007.top/ai/optimus.conf
 sudo mkdir -p /etc/optimus-manager && cp optimus.conf /etc/optimus-manager/optimus-manager.conf
 
-sudo systemctl enable sddm.service optimus-manager.service
-sudo systemctl enable sddm.service sddm.service
+sudo systemctl enable sddm.service
+sudo systemctl enable optimus-manager.service
 
 # optimus-manager --set-startup=nvidia
 

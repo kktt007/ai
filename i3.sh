@@ -30,3 +30,10 @@ yay nerd-fonts-fira-code
 yay brave-bin
 yay visual-studio-code-bin
 yay appimagelauncher
+
+# ZSH
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+git clone https://github.com/rupa/z.git "$HOME/.config/scripts"
+
+git clone https://github.com/sindresorhus/pure.git "$ZSH_CUSTOM/themes/pure"

@@ -1,11 +1,3 @@
-<!--
- * @Author: your name
- * @Date: 2021-10-21 21:05:16
- * @LastEditTime: 2021-10-21 21:37:33
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \github\ai\app.md
--->
 // sort mirror
 reflector
 
@@ -16,13 +8,13 @@ nano
 networkmanager dialog wpa_supplicant netctl wireless_tools
 
 // base
-base-devel git wget p7zip unrar tar unzip unarchiver tftp-hpa openssh
+base-devel devtools glib2 glibc lib32-gcc-libs lib32-glibc git wget p7zip unrar tar unzip unarchiver tftp-hpa openssh
 
 // lede 需要开启multilib镜像
-lib32-gcc-libs python2 perl-xml-parser bin86 asciidoc b43-fwcutter cdrtools mercurial fastjar intltool sharutils time xmlto qemu upx dtc lib32-glibc msmtp uglify-js libantlr3c gperf swig rsync
+ python2 perl-xml-parser bin86 asciidoc b43-fwcutter cdrtools mercurial fastjar intltool sharutils time xmlto qemu upx dtc msmtp uglify-js libantlr3c gperf swig rsync
 
 ``` 已有的
-gcc-libs apr-util apr ncurses binutils bzip2 serf libutf8proc subversion unzip libelf autoconf gettext libtool glib2 patch bzip2 zlib flex
+gcc-libs libtool libelf openssl apr-util apr ncurses binutils bzip2 serf libutf8proc subversion unzip libelf autoconf gettext libtool glib2 patch bzip2 zlib flex
 ```
 
 // microsoft and grub

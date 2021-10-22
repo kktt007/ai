@@ -35,7 +35,7 @@ alacritty rxvt-unicode konsole terminator
 xorg-server xorg-server-common xorg-xrandr arandr xorg-xrdb xorg-xmodmap xkeycaps xdg-user-dirs libx11 libxext
 
 // fonts
-ttf-joypixels wqy-microhei
+ttf-joypixels wqy-microhei ttf-iosevka-nerd ttf-sarasa-gothic
 
 // I/O
 xf86-input-libinput
@@ -68,6 +68,11 @@ ranger
 // i3
 i3-gaps rofi dunst picom numlockx network-manager-applet flameshot  feh
 
+// app
+htop //Interactive process viewer
+
+ncdu // Disk usage analyzer with an ncurses interface
+
 // pdf
 zathura zathura-pdf-mupdf simplescreenrecorder bleachbit
 
@@ -85,8 +90,6 @@ yay optimus-manager
 yay optimus-manager-qt
 yay nerd-fonts-meslo
 yay nerd-fonts-dejavu-complete
-yay ttf-sarasa-gothic
-yay ttf-iosevka
 yay nerd-fonts-fira-code
 yay brave-bin
 yay visual-studio-code-bin

@@ -1,3 +1,4 @@
+
 // sort mirror
 reflector
 
@@ -15,6 +16,7 @@ base-devel devtools glib2 glibc lib32-gcc-libs lib32-glibc git wget p7zip unrar 
 
 ``` 已有的
 gcc-libs libtool libelf openssl apr-util apr ncurses binutils bzip2 serf libutf8proc subversion unzip libelf autoconf gettext libtool glib2 patch bzip2 zlib flex
+openssl // coreutils 系统自带组件
 ```
 
 // microsoft and grub

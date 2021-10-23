@@ -12,11 +12,18 @@ networkmanager dialog wpa_supplicant netctl wireless_tools
 base-devel devtools glib2 glibc lib32-gcc-libs lib32-glibc git wget p7zip unrar tar unzip unarchiver tftp-hpa openssh
 
 // lede 需要开启multilib镜像
- python2 perl-xml-parser bin86 asciidoc b43-fwcutter cdrtools mercurial fastjar intltool sharutils time xmlto qemu upx dtc msmtp uglify-js libantlr3c gperf swig rsync
+ python2 perl-xml-parser bin86 asciidoc xmlto qemu upx dtc msmtp uglify-js libantlr3c gperf swig rsync
+
+```
+fastjar intltool b43-fwcutter cdrtools mercurial  sharutils time// 以上部分依赖自动安装
+```
 
 ``` 已有的
 gcc-libs libtool libelf openssl apr-util apr ncurses binutils bzip2 serf libutf8proc subversion unzip libelf autoconf gettext libtool glib2 patch bzip2 zlib flex
+
 openssl // coreutils 系统自带组件
+
+base-devel // 自带  	autoconf automake binutils bison fakeroot file findutils flex gawk gcc gettext grep groff gzip libtool m4 make pacman patch pkgconf	sed sudo texinfo which
 ```
 
 // microsoft and grub

@@ -1,4 +1,3 @@
-# /mnt is the /, /mnt/home/kktt007 /home/kktt007
 timedatectl set-timezone Asia/Shanghai
 hwclock -w
 timedatectl set-ntp true
@@ -38,7 +37,7 @@ pacman -S --noconfirm archlinux-keyring archlinuxcn-keyring
 
 pacman -Sy
 
-pacman -S --noconfirm base-devel git wget nano networkmanager bbswitch alacritty dialog wpa_supplicant netctl wireless_tools dosfstools ntfs-3g grub efibootmgr os-prober intel-ucode
+pacman -S --noconfirm base-devel devtools glib2 glibc lib32-gcc-libs lib32-glibc git wget p7zip unrar tar unzip unarchiver tftp-hpa openssh nano networkmanager dialog wpa_supplicant netctl wireless_tools dosfstools ntfs-3g grub efibootmgr os-prober intel-ucode
 
 passwd
 

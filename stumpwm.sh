@@ -26,6 +26,7 @@ sudo mkdir -p /etc/optimus-manager && cp optimus.conf /etc/optimus-manager/optim
 sudo systemctl enable sddm.service 
 sudo systemctl enable optimus-manager.service
 
+## stumpwm
 yay stumpwm
 yay nerd-fonts-meslo
 yay nerd-fonts-dejavu-complete

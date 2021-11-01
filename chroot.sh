@@ -1,4 +1,5 @@
 timedatectl set-timezone Asia/Shanghai
+
 hwclock -w
 timedatectl set-ntp true
 
@@ -35,7 +36,7 @@ pacman -Sy
 
 pacman -S --noconfirm archlinux-keyring archlinuxcn-keyring
 
-pacman -Sy
+pacman -Syu
 
 pacman -S --noconfirm base-devel devtools glib2 glibc lib32-gcc-libs lib32-glibc git wget p7zip unrar tar unzip unarchiver tftp-hpa openssh nano networkmanager dialog wpa_supplicant netctl wireless_tools dosfstools ntfs-3g grub efibootmgr os-prober intel-ucode
 

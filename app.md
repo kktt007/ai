@@ -92,6 +92,9 @@ materia-kde kvantum-theme-materia
 // theme
 papirus-icon-theme 
 
+// lisp
+sbcl
+
 // yay
 yay optimus-manager
 yay optimus-manager-qt

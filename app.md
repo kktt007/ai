@@ -63,7 +63,7 @@ fcitx-im fcitx-rime kcm-fcitx fcitx-table-extra fcitx-im
 neovim cscope vim-jedi xsel clip nodejs yarn emacs
 
 // apps
-meld tmux weechat neofetch flameshot stow
+meld tmux weechat neofetch flameshot stow zerotier-one
 
 // display manager
 sddm
@@ -94,6 +94,18 @@ papirus-icon-theme
 
 // lisp
 sbcl
+
+// 远程控制
+[Remmina - ArchWiki](https://wiki.archlinux.org/title/Remmina)
+
+[Arch Linux - rdesktop 1.9.0-2 (x86_64)](https://archlinux.org/packages/community/x86_64/rdesktop/)
+
+[Arch Linux - freerdp 2:2.4.1-1 (x86_64)](https://archlinux.org/packages/community/x86_64/freerdp/)
+
+[Xrdp - ArchWiki](https://wiki.archlinux.org/title/Xrdp)
+
+[AUR (en) - teamviewer](https://aur.archlinux.org/packages/teamviewer/)
+
 
 // yay
 yay optimus-manager

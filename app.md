@@ -1,17 +1,17 @@
 
-// sort mirror
+## sort mirror
 reflector
 
-// editor
+## editor
 nano 
 
-// network
+## network
 networkmanager dialog wpa_supplicant netctl wireless_tools
 
-// base
+## base
 base-devel devtools glib2 glibc lib32-gcc-libs lib32-glibc git wget p7zip unrar tar unzip unarchiver tftp-hpa openssh
 
-// lede 需要开启multilib镜像
+## lede 需要开启multilib镜像
  python2 perl-xml-parser bin86 asciidoc xmlto qemu upx dtc msmtp uglify-js libantlr3c gperf swig rsync
 
 ```
@@ -21,81 +21,102 @@ fastjar intltool b43-fwcutter cdrtools mercurial  sharutils time// 以上部分�
 ``` 已有的
 gcc-libs libtool libelf openssl apr-util apr ncurses binutils bzip2 serf libutf8proc subversion unzip libelf autoconf gettext libtool glib2 patch bzip2 zlib flex
 
-openssl // coreutils 系统自带组件
+openssl // 属于coreutils 系统自带组件
 
 base-devel // 自带  	autoconf automake binutils bison fakeroot file findutils flex gawk gcc gettext grep groff gzip libtool m4 make pacman patch pkgconf	sed sudo texinfo which
 ```
 
-// microsoft and grub
+## microsoft and grub
 dosfstools ntfs-3g grub efibootmgr os-prober intel-ucode
 
-// GPU
+## GPU
 bbswitch nvidia nvidia-utils nvidia-settings libva-vdpau-driver libva-utils libva-intel-driver
 
-// language
-go python python-pip python-pipenv perl ruby
+## language
+go python python-pip python-pipenv perl ruby sbcl
+  - sbcl lisp解释器
 
-// terminal
-alacritty rxvt-unicode konsole terminator 
+## terminal
+alacritty rxvt-unicode terminator 
 
-// xorg
+## xorg
 xorg-server xorg-server-common xorg-xrandr arandr xorg-xrdb xorg-xmodmap xkeycaps xdg-user-dirs libx11 libxext
 
-// fonts
+## fonts
 ttf-joypixels wqy-microhei ttf-iosevka-nerd ttf-sarasa-gothic
 
-// I/O
+## I/O
 xf86-input-libinput
 
-// audio
+## audio
 alsa-utils pulseaudio pulseaudio-alsa alsa-plugins alsa-firmware pavucontrol-qt
 
-// video
+## video
 mpv smplayer gstreamer gst-libav gst-plugins-good
 
-// zsh
+## 标准文件夹生成
+xdg-user-dirs-update
+
+## zsh
 zsh zsh-autosuggestions zsh-syntax-highlighting zsh-completions fd ripgrep
 
-// rime
+## rime
 fcitx-im fcitx-rime kcm-fcitx fcitx-table-extra fcitx-im
 
-// editor
+## editor
 neovim cscope vim-jedi xsel clip nodejs yarn emacs
 
-// apps
-meld tmux weechat neofetch flameshot stow zerotier-one
+## apps
+  - meld git diff工具
 
-// display manager
+  - tmux  终端复用
+
+  - byobu ssh后台运行工具
+
+  - weechat  irc客户端
+
+  - neofetch 系统信息
+
+  - 截图 flameshot 
+
+  - stow dotfile备份
+
+  - zerotier-one 内网穿透
+
+  - htop //Interactive process viewer
+
+  - ncdu // Disk usage analyzer with an ncurses interface
+
+
+## display manager
 sddm
 
-// tiling windows manager
-udiskie // automount
-ranger
+## tiling windows manager
 
-// i3
-i3-gaps rofi dunst picom numlockx network-manager-applet flameshot  feh
+  - udiskie 自动挂载 automount
 
-// app
-htop //Interactive process viewer
+  - ranger 文件浏览
 
-ncdu // Disk usage analyzer with an ncurses interface
+## i3
+i3-gaps rofi dunst picom numlockx network-manager-applet feh
 
-// pdf
+## 窗口
+yay stumpwm
+
+## pdf
 zathura zathura-pdf-mupdf simplescreenrecorder bleachbit
 
-// kde
+## kde
 kf5 kf5-aids plasma plasma-nm packagekit-qt5 dolphin kcron khelpcenter ksystemlog partitionmanager konsole filelight kdf kgpg kate kbackup markdownpart kdialog kcharselect sweeper gwenview kcolorchooser okular kruler kdeconnect kdenetwork-filesharing kget kmix
 
-// kde theme
+## kde theme
 materia-kde kvantum-theme-materia 
 
-// theme
+## theme
 papirus-icon-theme 
 
-// lisp
-sbcl
 
-// 远程控制
+## 远程控制
 [Remmina - ArchWiki](https://wiki.archlinux.org/title/Remmina)
 
 [Arch Linux - rdesktop 1.9.0-2 (x86_64)](https://archlinux.org/packages/community/x86_64/rdesktop/)
@@ -107,7 +128,7 @@ sbcl
 [AUR (en) - teamviewer](https://aur.archlinux.org/packages/teamviewer/)
 
 
-// yay
+## yay 字体,多显卡等
 yay optimus-manager
 yay optimus-manager-qt
 yay nerd-fonts-meslo

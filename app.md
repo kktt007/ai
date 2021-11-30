@@ -87,6 +87,7 @@ neovim cscope vim-jedi xsel clip nodejs yarn emacs
 
   - ncdu // Disk usage analyzer with an ncurses interface
 
+  - exa // 类似ls
 
 ## display manager
 sddm
@@ -96,6 +97,8 @@ sddm
   - udiskie 自动挂载 automount
 
   - ranger 文件浏览
+
+  - nnn // file browser
 
 ## i3
 i3-gaps rofi dunst picom numlockx network-manager-applet feh

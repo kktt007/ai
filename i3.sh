@@ -1,12 +1,4 @@
 sudo pacman -S --noconfirm go python python-pip python-pipenv perl ruby sbcl xorg-server xorg-server-common xorg-xrandr arandr xorg-xrdb xorg-xmodmap xkeycaps xdg-user-dirs ttf-joypixels wqy-microhei xf86-input-libinput alsa-utils pulseaudio pulseaudio-alsa alsa-plugins alsa-firmware kmix pavucontrol-qt nvidia nvidia-utils nvidia-settings libva-vdpau-driver libva-utils libva-intel-driver zsh zsh-autosuggestions zsh-syntax-highlighting zsh-completions bash-completion rxvt-unicode fd neovim cscope vim-jedi xsel nodejs yarn meld tmux weechat neofetch flameshot mpv smplayer gstreamer gst-libav gst-plugins-good fcitx-im fcitx-rime kcm-fcitx fcitx-table-extra ripgrep stow zathura zathura-pdf-mupdf openssh simplescreenrecorder bleachbit papirus-icon-theme libx11 libxext perl-xml-parser bin86 asciidoc b43-fwcutter cdrtools mercurial fastjar intltool sharutils time xmlto qemu upx dtc lib32-glibc msmtp uglify-js libantlr3c gperf swig rsync sddm materia-gtk-theme copyq zerotier-one
-###
- # @Author: your name
- # @Date: 2021-10-18 12:57:16
- # @LastEditTime: 2021-11-22 08:49:11
- # @LastEditors: Please set LastEditors
- # @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- # @FilePath: \github\ai\i3.sh
-### 
 
 # i3
 sudo pacman -S --noconfirm i3-gaps rofi dunst picom numlockx network-manager-applet flameshot ranger feh udiskie

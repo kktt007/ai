@@ -57,13 +57,19 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 systemctl enable NetworkManager.service
 
+curl -O https://raw.githubusercontent.com/kktt007/ai/main/stumpwm.sh
+
 curl -O https://raw.githubusercontent.com/kktt007/ai/main/i3.sh
 
 curl -O https://raw.githubusercontent.com/kktt007/ai/main/kde.sh
 
+cp stumpwm.sh /home/kktt007/
+
 cp i3.sh /home/kktt007/
 
 cp kde.sh /home/kktt007/
+
+chmod +x /home/kktt007/stumpwm.sh
 
 chmod +x /home/kktt007/i3.sh
 

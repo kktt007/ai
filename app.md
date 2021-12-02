@@ -11,7 +11,7 @@ networkmanager dialog wpa_supplicant netctl wireless_tools
 ## base
 base-devel devtools glib2 glibc lib32-gcc-libs lib32-glibc git wget p7zip unrar tar unzip unarchiver tftp-hpa openssh
 
-## lede 需要开启multilib镜像
+### lede 需要开启multilib镜像
  python2 perl-xml-parser bin86 asciidoc xmlto qemu upx dtc msmtp uglify-js libantlr3c gperf swig rsync
 
 ```
@@ -32,11 +32,11 @@ dosfstools ntfs-3g grub efibootmgr os-prober intel-ucode
 ## GPU
 bbswitch nvidia nvidia-utils nvidia-settings libva-vdpau-driver libva-utils libva-intel-driver
 
-## language
+### language
 go python python-pip python-pipenv perl ruby sbcl
   - sbcl lisp解释器
 
-## terminal
+### terminal
 alacritty rxvt-unicode terminator 
 
 ## xorg
@@ -51,7 +51,7 @@ xf86-input-libinput
 ## audio
 alsa-utils pulseaudio pulseaudio-alsa alsa-plugins alsa-firmware pavucontrol-qt
 
-## video
+### video
 mpv smplayer gstreamer gst-libav gst-plugins-good
 
 ## 标准文件夹生成
@@ -66,7 +66,7 @@ fcitx-im fcitx-rime kcm-fcitx fcitx-table-extra fcitx-im
 ## editor
 neovim cscope vim-jedi xsel clip nodejs yarn emacs
 
-## apps
+### apps
   - meld git diff工具
 
   - tmux  终端复用
@@ -92,7 +92,7 @@ neovim cscope vim-jedi xsel clip nodejs yarn emacs
 ## display manager
 sddm
 
-## tiling windows manager
+### tiling windows manager
 
   - udiskie 自动挂载 automount
 
@@ -100,26 +100,26 @@ sddm
 
   - nnn // file browser
 
-## i3
+### i3
 i3-gaps rofi dunst picom numlockx network-manager-applet feh
 
-## 窗口
+### 窗口
 yay stumpwm
 
-## pdf
+### pdf
 zathura zathura-pdf-mupdf simplescreenrecorder bleachbit
 
-## kde
+### kde
 kf5 kf5-aids plasma plasma-nm packagekit-qt5 dolphin kcron khelpcenter ksystemlog partitionmanager konsole filelight kdf kgpg kate kbackup markdownpart kdialog kcharselect sweeper gwenview kcolorchooser okular kruler kdeconnect kdenetwork-filesharing kget kmix
 
-## kde theme
+### kde theme
 materia-kde kvantum-theme-materia 
 
-## theme
+### theme
 papirus-icon-theme 
 
 
-## 远程控制
+### 远程控制
 [Remmina - ArchWiki](https://wiki.archlinux.org/title/Remmina)
 
 [Arch Linux - rdesktop 1.9.0-2 (x86_64)](https://archlinux.org/packages/community/x86_64/rdesktop/)
@@ -131,7 +131,7 @@ papirus-icon-theme
 [AUR (en) - teamviewer](https://aur.archlinux.org/packages/teamviewer/)
 
 
-## yay 字体,多显卡等
+### yay 字体,多显卡等
 yay optimus-manager
 yay optimus-manager-qt
 yay nerd-fonts-meslo

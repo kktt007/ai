@@ -32,6 +32,8 @@ echo "[archlinuxcn]" >> /etc/pacman.conf
 
 echo "Server = http://mirrors.aliyun.com/archlinuxcn/\$arch" >> /etc/pacman.conf
 
+sed -e "s|\#\[multilib\]|\[multilib\]|" -i /etc/pacman.conf
+
 pacman -Sy
 
 pacman -S --noconfirm archlinux-keyring archlinuxcn-keyring

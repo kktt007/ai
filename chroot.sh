@@ -1,6 +1,7 @@
 timedatectl set-timezone Asia/Shanghai
 
 hwclock -w
+
 timedatectl set-ntp true
 
 echo archlinux > /etc/hostname
@@ -34,11 +35,13 @@ echo "Server = http://mirrors.aliyun.com/archlinuxcn/\$arch" >> /etc/pacman.conf
 
 sed -e "s|\#\[multilib\]|\[multilib\]|" -i /etc/pacman.conf
 
+sed -e "s|\#Include = /etc/pacman.d/mirrorlist|Include = /etc/pacman.d/mirrorlist|" -i /etc/pacman.conf
+
 pacman -Sy
 
 pacman -S --noconfirm archlinux-keyring archlinuxcn-keyring
 
-pacman -Syu
+pacman -Syyu
 
 pacman -S --noconfirm base-devel devtools glib2 glibc lib32-gcc-libs lib32-glibc git wget p7zip unrar tar unzip unarchiver tftp-hpa openssh nano networkmanager dialog wpa_supplicant netctl wireless_tools dosfstools ntfs-3g grub efibootmgr os-prober intel-ucode
 

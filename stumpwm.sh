@@ -33,6 +33,8 @@ yay stumpwm
 yay nerd-fonts-meslo
 yay nerd-fonts-dejavu-complete
 
+curl -O https://github.com/kktt007/ai/raw/main/stumpwm.desktop
+
 sudo mkdir /usr/share/xsessions
 
 sudo cp stumpwm.desktop /usr/share/xsessions/stumpwm.desktop

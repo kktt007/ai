@@ -33,4 +33,4 @@ yay stumpwm
 yay nerd-fonts-meslo
 yay nerd-fonts-dejavu-complete
 
-sudo echo -e "[Desktop Entry]\nEncoding=UTF-8\nName=StumpWM\nComment=Login using\nStumpWM\nExec=stumpwm\nType=XSession" > /usr/share/xsessions/ stumpwm.desktop
+sudo echo -e "[Desktop Entry]\nEncoding=UTF-8\nName=StumpWM\nComment=Login using\nStumpWM\nExec=stumpwm\nType=XSession" > /usr/share/xsessions/stumpwm.desktop

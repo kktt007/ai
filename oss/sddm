@@ -1,0 +1,36 @@
+exec --no-startup-id xrandr --output DisplayPort-0 --mode 1920x1080 --pos 2944x0 --rotate normal --output DisplayPort-1 --off --output DisplayPort-2 --mode 1280x1024 --pos 0x0 --rotate left --output HDMI-A-0 --primary --mode 1920x1080 --pos               1024x0 --rotate normal
+
+# In case nvidia card is being used
+exec --no-startup-id xrandr --output eDP-1-1 --mode 2048x1152
+# In case default card is being used (intel)
+exec --no-startup-id xrandr --output eDP-1 --mode 2048x1152
+
+
+exec --no-startup-id xrandr --output eDP-1 --off
+#exec --no-startup-id xrandr --output DP-2-2 --pos 0x0 --left-of DP-2-1 --output DP-2-1 --pos 1920x0
+
+关掉：sudo xrandr --output eDP-1-1 --off
+打开：sudo xrandr --output eDP-1-1 --auto
+
+https://wiki.archlinux.org/title/HiDPI_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#Side_display
+eDP-1-1 connected primary 1920x1080+0+0 (normal left inverted right x axis y axis) 344mm x 193mm
+
+HDMI-0 connected primary 2560x1440+0+0 (normal left inverted right x axis y axis) 597mm x 336mm
+
+xrandr --output HDMI-1 --auto --output eDP-1 --off
+
+1. 测试是否可以关闭幅屏,保证操作没问题
+2. 使用
+3. 使用脚本
+[xrandr - ArchWiki](https://wiki.archlinux.org/title/xrandr#Configuration)
+#!/bin/bash
+intern=LVDS1
+extern=VGA1
+
+if xrandr | grep "$extern disconnected"; then
+    xrandr --output "$extern" --off --output "$intern" --auto
+else
+    xrandr --output "$intern" --off --output "$extern" --auto
+fi
+
+应该是xrandr --output HDMI-1-1 --auto --output eDP-1-1 --off

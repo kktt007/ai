@@ -1,0 +1,58 @@
+
+;; [dotfiles/init.lisp at master · toshism/dotfiles](https://github.com/toshism/dotfiles/blob/master/stumpwm/.stumpwm.d/init.lisp)
+
+;; [dotfiles/.stumpwmrc at master · r0man/dotfiles](https://github.com/r0man/dotfiles/blob/master/stumpwm/.stumpwmrc)
+
+;; [dotfiles/stumpwm.org at master · kwpav/dotfiles](https://github.com/kwpav/dotfiles/blob/master/stumpwm.org)
+(in-package :stumpwm)
+
+;; [dotfiles/stumpwm.org at master · kwpav/dotfiles](https://github.com/kwpav/dotfiles/blob/master/stumpwm.org)
+
+;; [dotfiles/stumpwm.lisp at master · dakling/dotfiles](https://github.com/dakling/dotfiles/blob/master/stumpwm.lisp)
+
+;; 下面这个 picom
+;; [cfg/.stumpwmrc at master · lepisma/cfg](https://github.com/lepisma/cfg/blob/master/stumpwm/.stumpwmrc)
+
+;; [dot.me/config at master · podiki/dot.me](https://github.com/podiki/dot.me/blob/master/stumpwm/.config/stumpwm/config)
+
+;; [.stumpwmrc · h3-gentoo-danil · Danil Kutkevich / dotfiles · GitLab](https://gitlab.com/danil/dotfiles/-/blob/h3-gentoo-danil/.stumpwmrc)
+
+;; [dotfiles/stumpwm.org at master · kwpav/dotfiles](https://github.com/kwpav/dotfiles/blob/master/stumpwm.org?utm_source=pocket_mylist)
+
+;; [stumpwm/bindings.lisp at master · stumpwm/stumpwm](https://github.com/stumpwm/stumpwm/blob/master/bindings.lisp)
+
+(defcommand rofi () ()
+  "Start rofi"
+  (run-shell-command "rofi -show run -combi-modi run,window"))
+(define-key *top-map* (kbd "M-SPC") "rofi")
+(defcommand refresh-stuff () ()
+  (run-shell-command "sh ~/.fehbg")
+  (run-commands "mode-line" "mode-line")
+  (run-shell-command "xmodmap ~/.Xmodmap"))
+(define-key *root-map* (kbd "M-m") "refresh-stuff")
+
+;; UI
+(ql:quickload "clx-truetype")
+(load-module "ttf-fonts")
+(xft:cache-fonts)
+(set-font
+ (make-instance 'xft:font :family "MesloLGM Nerd Font Mono" :subfamily "Regular" :size 14))
+(set '*message-window-padding* 4)
+
+;; Modeline
+(LOAD-MODULE "fuzzytime")
+(SETF *MODE-LINE-TIMEOUT* 60
+      *SCREEN-MODE-LINE-FORMAT* '("%F ^>" (:EVAL (MAIL-INFO)) "     " (:EVAL (BATTERY-INFO)))
+      *MODE-LINE-FOREGROUND-COLOR* "black"
+      *MODE-LINE-BACKGROUND-COLOR* "#EAFFFF"
+      FUZZYTIME:*MINUTE-GRANULARITY* 5
+      FUZZYTIME:*FUZZYTIME-FORMAT* '(:MINUTES :HOURS "^7 in the ^n" :PERIOD "^7 on ^n" :DOW "^7 the ^n" :DAY))
+(TOGGLE-MODE-LINE (CURRENT-SCREEN) (CURRENT-HEAD))
+
+;; Init
+(update-color-map (current-screen))
+(run-shell-command "xmodmap ~/.Xmodmap")
+(run-shell-command "sh ~/.fehbg")
+
+;;shift+space
+(set-prefix-key (kbd "S-SPC"))

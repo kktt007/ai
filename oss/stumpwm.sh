@@ -38,6 +38,8 @@ curl -O https://kktt007.top/ai/stumpwm.desktop
 
 curl -O https://kktt007.top/ai/config
 
+mkdir ~/.config/stumpwm
+
 ln -s ~/config ~/.config/stumpwm/config
 
 sudo mkdir /usr/share/xsessions
